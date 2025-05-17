@@ -38,13 +38,13 @@ export default function page() {
               (How We Fix SMB Growth Challenges with AI)
             </span>
           </p>
-          <h1 className="text-center font-unbounded text-[28px] sm:text-[32px] md:text-[36px] lg:text-[40px] font-bold leading-tight sm:leading-snug md:leading-8 mb-4 sm:mb-6">
-            <span className="text-[#0B50EA] flex items-center gap-2">
-              AI{" "}
+          <h1 className="text-center  font-unbounded text-[28px] sm:text-[32px] md:text-[36px] lg:text-[40px] font-bold leading-tight sm:leading-snug md:leading-8 mb-4 sm:mb-6">
+            <span className="text-[#0B50EA] justify-center flex flex-wrap items-center gap-2">
+              <p>AI</p>
               <span>
                 <StarIcon color="#FFF" />
-              </span>{" "}
-              Human Expertise
+              </span>
+              <p>Human Expertise</p>
             </span>
             <br />
             Maximum Growth
@@ -65,9 +65,9 @@ export default function page() {
         </div>
       </div>
       {/* 2nd */}
-      <div className="relative w-full px-28 py-20 flex flex-col items-center justify-start bg-[#011542]/20">
-        <h2 className="text-5xl font-unbounded font-bold">Services</h2>
-        <p className="text-white/70 text-lg sm:text-xl leading-snug sm:leading-8 mb-4 sm:mb-6">
+      <div className="relative w-full sm:px-28 px-5 py-20 flex flex-col items-center justify-start bg-[#011542]/20">
+        <h2 className="text-5xl font-unbounded font-bold mb-6">Services</h2>
+        <p className="text-white/70 text-lg sm:text-xl text-center leading-snug sm:leading-8 mb-6 sm:mb-12">
           Our AI-powered solutions are designed to eliminate guesswork and
           deliver consistent results. From smarter budgeting to predictive
           targeting, we help you scale efficiently—while you focus on what
@@ -92,11 +92,11 @@ export default function page() {
         /> */}
       </div>
       {/* 3rd */}
-      <div className="w-full py-16 px-20 flex flex-col items-center justify-start bg-[#011542]/20">
+      <div className="w-full py-16 sm:px-20 px-5 flex flex-col items-center justify-start bg-[#011542]/20">
         <p className="text-2xl font-unbounded font-bold flex items-center gap-5 mb-8">
           Before <span className="text-4xl">V/S</span> After
         </p>
-        <div className="flex items-center justify-center gap-5 w-full">
+        <div className="flex sm:flex-row flex-col items-center justify-center gap-5 w-full">
           <div className="w-full max-w-xl rounded-xl gap-5 flex flex-col items-start justify-start backdrop-blur-xl bg-gradient-to-br from-[#0B50EA]/20 via-[#011542]/10  to-[#011542]/10 hover:to-[#0B50EA]/20 transition-colors delay-100 p-5">
             <Image
               src={"/before.png"}
