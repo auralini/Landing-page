@@ -66,7 +66,7 @@ export default function page() {
           </div>
           <div className="space-y-4 order-1 md:order-2">
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
-              Our Purpose
+              Our Vision
             </h2>
             <p className="text-[#8a8a8a] text-lg md:text-xl leading-relaxed  max-w-lg">
               To empower SMBs with cutting-edge AI marketing, levelling the

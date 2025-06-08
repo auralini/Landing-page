@@ -25,12 +25,12 @@ import { FaYoutube } from "react-icons/fa6";
 
 export default function page() {
   return (
-    <div className="w-full bg-black relative ">
-      <div className="sticky top-5 left-0 right-0 z-50">
+    <div className="w-full flex flex-col items-center bg-black relative ">
+      <div className="sticky top-5 left-0 right-0 z-50 w-full">
         <Header />
       </div>
       {/* 1st */}
-      <div className=" w-full sm:min-h-screen min-h-full relative bg-gradient-to-b from-[#011542]/40 via-[#011542]/40 to-[#011542]/20 pt-24">
+      <div className=" w-full sm:min-h-screen min-h-full relative bg-gradient-to-b from-[#011542]/40 via-[#011542]/40 to-[#011542]/20 sm:pt-24 pt-7">
         <div className="relative flex flex-col items-center justify-center  w-full sm:w-full md:w-full px-4 sm:px-6 md:px-8">
           <p className="bg-gradient-to-r from-[#0B50EA]/30 via-[#011542]/20 to-[#011542]/20 p-2 px-4 border-l-2 border-white/20 backdrop-blur-3xl text-center text-[14px] sm:text-[16px] leading-tight sm:leading-5 mb-4 sm:mb-6 md:mb-8 rounded-full">
             Service{" "}
@@ -38,13 +38,13 @@ export default function page() {
               (How We Fix SMB Growth Challenges with AI)
             </span>
           </p>
-          <h1 className="text-center  font-unbounded text-[28px] sm:text-[32px] md:text-[36px] lg:text-[40px] font-bold leading-tight sm:leading-snug md:leading-8 mb-4 sm:mb-6">
-            <span className="text-[#0B50EA] justify-center flex flex-wrap items-center gap-2">
-              <p>AI</p>
+          <h1 className="text-center font-unbounded text-[28px] sm:text-[32px] md:text-[36px] lg:text-[40px] font-bold leading-tight sm:leading-snug md:leading-8 mb-4 sm:mb-6">
+            <span className="text-[#0B50EA] flex items-center sm:gap-2 gap-0">
+              AI{" "}
               <span>
                 <StarIcon color="#FFF" />
-              </span>
-              <p>Human Expertise</p>
+              </span>{" "}
+              Human Expertise
             </span>
             <br />
             Maximum Growth
@@ -65,9 +65,9 @@ export default function page() {
         </div>
       </div>
       {/* 2nd */}
-      <div className="relative w-full sm:px-28 px-5 py-20 flex flex-col items-center justify-start bg-[#011542]/20">
-        <h2 className="text-5xl font-unbounded font-bold mb-6">Services</h2>
-        <p className="text-white/70 text-lg sm:text-xl text-center leading-snug sm:leading-8 mb-6 sm:mb-12">
+      <div className="relative w-full sm:max-w-2/3 max-w-full sm:px-0 px-4 flex flex-col items-center justify-start bg-[#011542]/20 sm:pt-0 pt-24">
+        <h2 className="text-5xl font-unbounded font-bold">Services</h2>
+        <p className="text-white/70 text-center text-lg sm:text-xl leading-snug sm:leading-8 mb-4 sm:mb-6">
           Our AI-powered solutions are designed to eliminate guesswork and
           deliver consistent results. From smarter budgeting to predictive
           targeting, we help you scale efficiently—while you focus on what
@@ -178,7 +178,7 @@ export default function page() {
 function FeatureBox({ icon, text }: { icon: React.ReactNode; text: string }) {
   return (
     <div
-      className="flex items-center justify-center gap-3 px-6 py-3 rounded-full w-full sm:w-auto
+      className="flex items-center justify-center gap-3 sm:px-6 sm:py-3  py-1 px-3 rounded-full w-full sm:w-auto
                  border border-white/20 bg-white/15 shadow-[0px_0px_156px_8px_rgba(11,80,234,0.28)]"
     >
       <span className="flex items-center justify-center">{icon}</span>

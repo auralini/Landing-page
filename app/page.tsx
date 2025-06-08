@@ -70,7 +70,7 @@ export default function Home() {
         </div>
         <div className="sm:absolute sm:px-0 px-5  sm:left-80 left-5 sm:top-1/2 transform sm:-translate-y-1/2 flex items-center justify-center">
           <div className="w-full max-w-7xl px-4 md:px-8 lg:px-0">
-            <div className="md:w-3/4 lg:w-2/3 xl:w-1/2 mx-auto md:mx-0">
+            <div className="md:w-3/4 lg:w-2/3 xl:w-2/3 mx-auto md:-mx-16">
               <p className=" sm:text-lg text-[12px] font-unbounded font-medium leading-relaxed mb-4 md:mb-8">
                 If You Don&apos;t Know What Your Competitors Are Doing,
                 You&apos;ve Already Lost Stay ahead with Our Competitive
