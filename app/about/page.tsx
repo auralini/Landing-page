@@ -39,9 +39,12 @@ export default function page() {
               Our Mission
             </h2>
             <p className="text-[#8a8a8a] text-lg md:text-xl leading-relaxed max-w-lg">
-              We built this agency because we were tired of outdated marketing
-              tactics and broken promises. Today&apos;s brands need smart, fast,
-              and data-driven strategies — and we deliver exactly that.
+              We’re on a mission to eliminate wasted ad spend and help Small and
+              Medium Businesses grow beyond their limits. By leveraging
+              cutting-edge AI strategies and data-driven decision-making, we
+              empower you to achieve sustainable, scalable growth without the
+              guesswork or wasted budgets. <br /> Your success isn’t just our
+              goal—it’s our bottom line.
             </p>
           </div>
           <div className="rounded-lg overflow-hidden aspect-video relative">

@@ -230,48 +230,43 @@ const marketingServices: MarketingService[] = [
     icon: Search,
     title: "Paid Search",
     description:
-      "Capture high-intent buyers when they're ready to purchase with precision-targeted ads.",
+      "Search Isn't About Showing Up — It's About Dominating High-Intent Moments.",
   },
   {
     icon: ShoppingBag,
     title: "Shopping Ads",
     description:
-      "Dominate Google Shopping and Performance Max with optimized feeds and smart bidding for maximum ROAS.",
+      "Shopping Ads Shouldn’t Just Appear — Outsell With Smarter Feeds.",
   },
   {
     icon: Share2,
     title: "Paid Social",
-    description:
-      "Drive awareness, engagement, and conversions across Meta, TikTok, and LinkedIn with proven scaling frameworks.",
+    description: "Interruption-Based Ads Only Work When They Stop the Scroll.",
   },
   {
     icon: BarChart2,
     title: "Programmatic Advertising",
-    description:
-      "Expand your reach with AI-driven display and retargeting campaigns that convert browsers into buyers.",
+    description: "Reach Real Buyers Across the Web — Not Just Click Farms.",
   },
   {
     icon: LineChart,
     title: "SEO (Search Engine Optimization)",
-    description:
-      "Rank higher, get found faster, and build organic traffic that scales your brand sustainably.",
+    description: "If You’re Not Ranking, You’re Invisible.",
   },
   {
     icon: Users,
     title: "SMO (Social Media Optimization)",
-    description:
-      "Build brand loyalty, boost community engagement, and turn followers into customers across platforms.",
+    description: "Algorithm-Proof Your Social Reach",
   },
   {
     icon: Store,
     title: "Marketplace Advertising (Amazon, Walmart, eBay)",
-    description:
-      "Optimize your marketplace presence to win the Buy Box and outperform competitors where it matters most.",
+    description: "Winning the Buy Box Isn’t Luck. It’s Strategy.",
   },
   {
     icon: Mail,
     title: "Email Marketing",
     description:
-      "Increase customer lifetime value (LTV) through high-converting automation, nurturing, and retention flows.",
+      "Still Sending Newsletters? You're Missing Out on 80% of Email Revenue.",
   },
 ];

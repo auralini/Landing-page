@@ -19,56 +19,60 @@ const marketingServices = [
   {
     id: 1,
     title: "Paid Search",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    description:
+      "Search Isn't About Showing Up — It's About Dominating High-Intent Moments.",
     icon: Search,
   },
   {
     id: 2,
     title: "Shopping",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    description:
+      "Shopping Ads Shouldn’t Just Appear — Outsell With Smarter Feeds.",
     icon: ShoppingBag,
   },
   {
     id: 3,
     title: "Paid Social",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    description: "Interruption-Based Ads Only Work When They Stop the Scroll.",
     icon: Target,
   },
   {
     id: 4,
     title: "SEO",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    description: "If You’re Not Ranking, You’re Invisible.",
     icon: BarChart,
   },
   {
     id: 5,
     title: "SMO",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    description: "Algorithm-Proof Your Social Reach",
     icon: ThumbsUp,
   },
   {
     id: 6,
     title: "Marketplace Advertising",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    description: "Winning the Buy Box Isn’t Luck. It’s Strategy",
     icon: FileText,
   },
   {
     id: 7,
     title: "Email Marketing",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    description:
+      "Increase customer lifetime value (LTV) through high-converting automation, nurturing, and retention flows.",
     icon: Send,
   },
   {
     id: 8,
     title: "Email",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    description:
+      "Still Sending Newsletters? You're Missing Out on 80% of Email Revenue.",
     icon: Mail,
   },
 ];
 
 export default function MarketingCards() {
   return (
-    <div className="min-h-screen  p-6 md:p-0">
+    <div className="min-h-screen sm:max-w-2/3 max-w-full p-6 md:p-0">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {marketingServices.map((service) => (
           <MarketingCard

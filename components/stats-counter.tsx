@@ -92,7 +92,7 @@ export default function StatsCounter() {
   return (
     <div className="w-full bg-[#011542]/20  pb-12 px-2">
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-wrap justify-between sm:gap-0 gap-5">
+        <div className="flex flex-wrap items-center sm:justify-between justify-center sm:gap-0 gap-5">
           <StatItem value="7M+" label="Ad Spend Optimized" />
           <StatItem value="50%" label="Avg. Cost Reduction for SMBs" />
           <StatItem value="3X" label="ROAS Boost for Ecom Brands" />

@@ -132,35 +132,38 @@ export default function Home() {
         </div>
       </div>
       {/* 4th */}
-      <div className="relative sm:min-h-screen min-h-full w-full sm:h-[120vh] h-[90vh]   bg-[#011542]/20 overflow-hidden">
+      <div className="relative w-full min-h-screen sm:h-[120vh] h-[120vh] bg-[#011542]/20 overflow-hidden">
         {/* Semi-circle container */}
-        <div className="absolute top-28 left-1/2 transform -translate-x-1/2 w-[120vw] aspect-[2/1] ">
+        <div className="absolute top-28 left-1/2 -translate-x-1/2 w-[250vw] sm:w-[120vw] aspect-[2/1]">
           {/* Blue border with drop shadow */}
-          <div className="absolute inset-0 rounded-t-full border-t-4 border-l-4 border-r-4 border-[rgb(1,38,123)]  shadow-[0_0_150px_15px_rgba(1,38,123,0.6)]">
+          <div className="absolute inset-0 rounded-t-full border-t-4 border-l-4 border-r-4 border-[rgb(1,38,123)] shadow-[0_0_150px_15px_rgba(1,38,123,0.6)]">
             {/* Content container */}
-            <div className="absolute  sm:top-[20%] top-[70%] left-1/2 transform -translate-x-1/2 w-full  max-w-6xl px-6 text-center flex flex-col items-center justify-start">
-              <div className="w-fit mb-8 bg-transparent text-white sm:px-6 px-2 py-1 rounded-full border border-white font-unbounded font-medium leading-8 sm:text-[14px] text-[10px]">
+            <div className="absolute top-[25%] sm:top-[20%] left-1/2 -translate-x-1/2 w-full max-w-[90%] sm:max-w-6xl px-4 sm:px-6 text-center flex flex-col items-center justify-start">
+              <div className="w-fit mb-4 sm:mb-8 bg-transparent text-white px-3 sm:px-6 py-1 rounded-full border border-white font-unbounded font-medium text-[8px] sm:text-[14px] leading-none">
                 The Solution How We Fix This – Your AI-Powered System
               </div>
-              <h2 className="text-center sm:text-[28px] text-2xl font-unbounded font-medium leading-8 mb-6">
+              <h2 className="text-white text-center text-[12px] sm:text-[28px] font-unbounded font-medium leading-tight sm:leading-8 mb-4 sm:mb-6">
                 We helped businesses drive measurable results
               </h2>
-              <p className="text-lg sm:px-0 px-5 mb-20">
+              <p className="text-white text-[10px] sm:text-lg px-2 sm:px-0 mb-10 sm:mb-20 leading-normal">
                 With AI-powered predictive analytics and intelligent budget
-                allocation, we ensure your marketing spend is optimized for
-                maximum ROI.
+                allocation, <br /> we ensure your marketing spend is optimized
+                for maximum ROI.
               </p>
-              <Image
-                src={"/circle.png"}
-                alt="circle"
-                width={1000}
-                height={800}
-                className="w-full px-5 h-auto object-contain"
-              />
+              <div className="w-full px-2 sm:px-0 max-w-[45%] sm:max-w-full">
+                <Image
+                  src="/circle.png"
+                  alt="circle"
+                  width={1000}
+                  height={800}
+                  className="w-full h-auto object-contain"
+                />
+              </div>
             </div>
           </div>
         </div>
       </div>
+
       {/* 5th */}
       <div className=" sm:pt-40 pt-5 bg-[#011542]/20  w-full flex flex-col items-center justify-start">
         <div className="mb-8 bg-transparent text-white px-6 py-1 rounded-full border border-white font-unbounded font-medium leading-8 text-[14px]">
