@@ -47,7 +47,7 @@ export default function Footer() {
           fontSize="text-sm"
         />
         <RotatingText
-          text="PRICING"
+          text="CONTACT US"
           href="/pricing"
           primaryColor="text-[#ffffff]"
           secondaryColor="text-[#0b50ea]"

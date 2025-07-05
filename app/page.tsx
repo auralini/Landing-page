@@ -12,6 +12,7 @@ import { FaYoutube } from "react-icons/fa6";
 import ImpactIcon from "@/components/ImpactIcon";
 import Footer from "@/components/footer";
 import ContactForm from "@/components/contact-form";
+import { motion } from "motion/react";
 
 export default function Home() {
   return (
@@ -19,7 +20,7 @@ export default function Home() {
       <div className="sticky top-5 left-0 right-0 z-50">
         <Header />
       </div>
-      <div className="-mt-24"></div>
+      <div className="sm:-mt-36 -mt-24"></div>
       {/* Hero */}
       <div className="w-full relative">
         <Image
@@ -27,10 +28,10 @@ export default function Home() {
           alt="hero image"
           width={1000}
           height={1000}
-          className="w-full h-[100svh] object-cover opacity-90"
+          className="w-full h-[100vh] object-cover opacity-90"
           priority
         />
-        <div className="flex flex-col items-center justify-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[95%] sm:w-[90%] md:w-4/5 px-4 sm:px-6 md:px-8">
+        <div className="mt-10 flex flex-col items-center justify-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[95%] sm:w-[90%] md:w-4/5 px-4 sm:px-6 md:px-8">
           <p className="text-center text-[14px] sm:text-[16px] leading-tight sm:leading-5 mb-4 sm:mb-6 md:mb-8">
             90% of SMBs Waste Their Ad Spend. Are You One of Them?
           </p>
@@ -48,11 +49,46 @@ export default function Home() {
           <p className="text-center text-[16px] sm:text-[18px] leading-tight sm:leading-6">
             We might be small, but we help you scale BIG!
           </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 mt-6 sm:mt-8 w-full">
-            <FeatureBox icon={<FaYoutube />} text="Smarter Ads" />
-            <FeatureBox icon={<ImpactIcon />} text="Bigger Impact" />
-            <FeatureBox icon={<BsGraphUp />} text="Faster Growth" />
-          </div>
+          <motion.div
+            className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 mt-6 sm:mt-8 w-full"
+            initial="hidden"
+            animate="visible"
+            variants={{
+              hidden: { opacity: 0 },
+              visible: {
+                opacity: 1,
+                transition: {
+                  staggerChildren: 0.2,
+                  delayChildren: 0.5,
+                },
+              },
+            }}
+          >
+            <motion.div
+              variants={{
+                hidden: { opacity: 0, y: 20, scale: 0.8 },
+                visible: { opacity: 1, y: 0, scale: 1 },
+              }}
+            >
+              <FeatureBox icon={<FaYoutube />} text="Smarter Ads" />
+            </motion.div>
+            <motion.div
+              variants={{
+                hidden: { opacity: 0, y: 20, scale: 0.8 },
+                visible: { opacity: 1, y: 0, scale: 1 },
+              }}
+            >
+              <FeatureBox icon={<ImpactIcon />} text="Bigger Impact" />
+            </motion.div>
+            <motion.div
+              variants={{
+                hidden: { opacity: 0, y: 20, scale: 0.8 },
+                visible: { opacity: 1, y: 0, scale: 1 },
+              }}
+            >
+              <FeatureBox icon={<BsGraphUp />} text="Faster Growth" />
+            </motion.div>
+          </motion.div>
         </div>
       </div>
       {/* Chess */}
@@ -258,12 +294,33 @@ export default function Home() {
 
 function FeatureBox({ icon, text }: { icon: React.ReactNode; text: string }) {
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0, y: 20, scale: 0.8 }}
+      animate={{ opacity: 1, y: 0, scale: 1 }}
+      whileHover={{
+        scale: 1.05,
+        y: -5,
+        boxShadow: "0px 0px 200px 12px rgba(11,80,234,0.4)",
+      }}
+      whileTap={{ scale: 0.95 }}
+      transition={{
+        duration: 0.3,
+        ease: "easeOut",
+        type: "spring",
+        stiffness: 300,
+        damping: 20,
+      }}
       className="flex items-center justify-center gap-3 px-6 py-3 rounded-full w-full sm:w-auto
-                 border border-white/20 bg-white/15 shadow-[0px_0px_156px_8px_rgba(11,80,234,0.28)]"
+                 border border-white/20 bg-white/15 shadow-[0px_0px_156px_8px_rgba(11,80,234,0.28)] cursor-pointer"
     >
-      <span className="flex items-center justify-center">{icon}</span>
+      <motion.span
+        className="flex items-center justify-center"
+        whileHover={{ rotate: 360 }}
+        transition={{ duration: 0.6, ease: "easeInOut" }}
+      >
+        {icon}
+      </motion.span>
       <span>{text}</span>
-    </div>
+    </motion.div>
   );
 }

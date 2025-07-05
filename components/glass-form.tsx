@@ -281,7 +281,7 @@ export function GlassForm() {
       </Form>
       <div>
         <Link
-          href="/terms"
+          href="https://wa.me/919949625260"
           className="text-sm text-white w-full hover:underline flex items-center gap-2 pt-5 justify-center"
         >
           <IoLogoWhatsapp className="text-white" size={20} /> Need a Quick Chat?

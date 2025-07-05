@@ -22,6 +22,7 @@ import {
 } from "lucide-react";
 import { BsGraphUp } from "react-icons/bs";
 import { FaYoutube } from "react-icons/fa6";
+import { motion } from "motion/react";
 
 export default function page() {
   return (
@@ -53,11 +54,46 @@ export default function page() {
             See how we transform outdated marketing methods into intelligent,
             data-driven strategies that deliver real results.
           </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 mt-6 sm:mt-8 w-full">
-            <FeatureBox icon={<FaYoutube />} text="Smart Budgeting" />
-            <FeatureBox icon={<ImpactIcon />} text="Predictive Targeting" />
-            <FeatureBox icon={<BsGraphUp />} text="Continuous Optimization" />
-          </div>
+          <motion.div
+            className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 mt-6 sm:mt-8 w-full"
+            initial="hidden"
+            animate="visible"
+            variants={{
+              hidden: { opacity: 0 },
+              visible: {
+                opacity: 1,
+                transition: {
+                  staggerChildren: 0.2,
+                  delayChildren: 0.5,
+                },
+              },
+            }}
+          >
+            <motion.div
+              variants={{
+                hidden: { opacity: 0, y: 20, scale: 0.8 },
+                visible: { opacity: 1, y: 0, scale: 1 },
+              }}
+            >
+              <FeatureBox icon={<FaYoutube />} text="Smart Budgeting" />
+            </motion.div>
+            <motion.div
+              variants={{
+                hidden: { opacity: 0, y: 20, scale: 0.8 },
+                visible: { opacity: 1, y: 0, scale: 1 },
+              }}
+            >
+              <FeatureBox icon={<ImpactIcon />} text="Predictive Targeting" />
+            </motion.div>
+            <motion.div
+              variants={{
+                hidden: { opacity: 0, y: 20, scale: 0.8 },
+                visible: { opacity: 1, y: 0, scale: 1 },
+              }}
+            >
+              <FeatureBox icon={<BsGraphUp />} text="Continuous Optimization" />
+            </motion.div>
+          </motion.div>
           <div className="absolute bottom-0 h-16 w-1/2 bg-gradient-to-b from-transparent via-[#0B50EA] to-transparent blur-3xl"></div>
         </div>
         <div className=" absolute top-10 right-1/4 transform -translate-x-1/2">
@@ -177,13 +213,32 @@ export default function page() {
 
 function FeatureBox({ icon, text }: { icon: React.ReactNode; text: string }) {
   return (
-    <div
+    <motion.div
+      whileHover={{
+        scale: 1.05,
+        y: -5,
+        boxShadow: "0px 0px 200px 12px rgba(11,80,234,0.4)",
+      }}
+      whileTap={{ scale: 0.95 }}
+      transition={{
+        duration: 0.3,
+        ease: "easeOut",
+        type: "spring",
+        stiffness: 300,
+        damping: 20,
+      }}
       className="flex items-center justify-center gap-3 sm:px-6 sm:py-3  py-1 px-3 rounded-full w-full sm:w-auto
-                 border border-white/20 bg-white/15 shadow-[0px_0px_156px_8px_rgba(11,80,234,0.28)]"
+                 border border-white/20 bg-white/15 shadow-[0px_0px_156px_8px_rgba(11,80,234,0.28)] cursor-pointer"
     >
-      <span className="flex items-center justify-center">{icon}</span>
+      <motion.span
+        className="flex items-center justify-center"
+        whileHover={{ rotate: 360 }}
+        transition={{ duration: 0.6, ease: "easeInOut" }}
+      >
+        {icon}
+      </motion.span>
       <span>{text}</span>
-    </div>
+    </motion.div>
   );
 }
 

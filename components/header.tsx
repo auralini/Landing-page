@@ -105,7 +105,7 @@ export default function Header() {
               fontSize="text-sm"
             />
             <RotatingText
-              text="PRICING"
+              text="Contact US"
               href="/pricing"
               primaryColor="text-[#ffffff]"
               secondaryColor="text-[#0b50ea]"

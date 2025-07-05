@@ -250,7 +250,7 @@ export default function GrowthAuditForm() {
           </AnimatedButton>
         </form>
         <Link
-          href="/terms"
+          href="https://wa.me/919949625260"
           className="text-sm text-white hover:underline flex items-center gap-2 pt-5 justify-center"
         >
           <IoLogoWhatsapp className="text-white" size={20} /> Need a Quick Chat?

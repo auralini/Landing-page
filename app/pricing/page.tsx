@@ -14,7 +14,7 @@ export default function page() {
       <div className=" w-full  pt-24 pb-20 relative bg-gradient-to-b from-[#011542]/40 via-[#011542]/40 to-[#011542]/20 ">
         <div className="relative flex flex-col items-center justify-center  w-full sm:w-full md:w-full px-4 sm:px-6 md:px-8">
           <p className="bg-gradient-to-r from-[#0B50EA]/30 via-[#011542]/20 to-[#011542]/20 p-2 px-4 border-l-2 border-white/20 backdrop-blur-3xl text-center text-[14px] sm:text-[16px] leading-tight sm:leading-5 mb-4 sm:mb-6 md:mb-8 rounded-full">
-            Pricing{" "}
+            Contact Us{" "}
             <span className="text-[#0B50EA] font-playfair_display italic">
               (Transparent, ROI-Based Plans)
             </span>

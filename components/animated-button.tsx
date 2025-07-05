@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils";
 import { Loader2 } from "lucide-react";
 import type { VariantProps } from "class-variance-authority";
 import type { buttonVariants } from "@/components/ui/button";
+import { useRouter } from "next/navigation";
 
 // Create our own ButtonProps type based on the actual Button implementation
 type ButtonProps = React.ComponentProps<"button"> &
@@ -47,6 +48,7 @@ export function AnimatedButton({
   size = "default",
   ...props
 }: AnimatedButtonProps) {
+  const router = useRouter();
   const [isHovered, setIsHovered] = React.useState(false);
   const [mousePosition, setMousePosition] = React.useState({ x: 0, y: 0 });
   const buttonRef = React.useRef<HTMLButtonElement>(null);
@@ -86,7 +88,7 @@ export function AnimatedButton({
 
       nextRippleId.current += 1;
       setRipples((prevRipples) => [...prevRipples, newRipple]);
-
+      router.push("/pricing");
       // Remove the ripple after animation completes
       setTimeout(() => {
         setRipples((prevRipples) =>
